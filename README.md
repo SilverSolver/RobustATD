@@ -31,13 +31,13 @@ _Growing amount and quality of AI-generated texts makes detecting such content m
 
 # Erratum
 
-After the acceptance of our paper to **Findings of EMNLP 2024**, we found a mistake in our code for **Selected coordinates** method. Namely, in the experiments with this particular method validation subsets of "Wikipedia" and "Reddit" subdomains of GPT-3D were intersecting with test subsets on the same subdomains, which is obviously incorrect; fortunately, no such problem for other methods was found. We fixed this mistake and received new results for Selected coordinates method. This is the list of all updated results:
+After the acceptance of the camera-ready version of our paper to **Findings of EMNLP 2024**, we found a mistake in our code for **Selected coordinates** method. Namely, in the experiments with this particular method validation subsets of "Wikipedia" and "Reddit" subdomains of GPT-3D were intersecting with test subsets on the same subdomains, which is obviously incorrect; fortunately, no such problem for other methods was found. We fixed this mistake and received new results for Selected coordinates method. This is the list of all updated results:
 
-Updated results for Figure 3 e:
+Updated results for Figure 3 e in paper (accuracy):
 
 ![figure_3_e](https://github.com/SilverSolver/RobustATD/blob/main/best_set_of_coords.png?raw=true)
 
-Updated results for Table 3 (accuracy):
+Updated results for Table 3 in paper (accuracy):
 
 | RoBERTa | CD | CM | CD | CM | CA |
 | --- | --- | --- | --- | --- | --- |
@@ -45,7 +45,7 @@ Updated results for Table 3 (accuracy):
 | ~~Selected coordinates~~ | ~~74.5~~ | ~~82.6~~ | ~~85.4~~ | ~~71.9~~ | ~~72.8~~ |
 | Selected coordinates | **77.1** | **84.2** | **88.2** | 72.2 | 69.7 |
 
-Updated results for Table 4 (accuracy):
+Updated results for Table 4 in paper (accuracy):
 
 | | BERT | | | Phi-2 | | |
 | --- | --- | --- | --- | --- | --- | --- |
