@@ -2,6 +2,10 @@
 
 Welcome to the official repository for the paper [**Robust AI-Generated Text Detection by Restricted Embeddings**](https://arxiv.org/abs/2410.08113). The essential code for replicating experiments is provided here. 
 
+_Growing amount and quality of AI-generated texts makes detecting such content more difficult. In most real-world scenarios, the domain (style and topic) of generated data and the generator model are not known in advance. In this work, we focus on the robustness of classifier-based detectors of AI-generated text, namely their ability to transfer to unseen generators or semantic domains. We investigate the geometry of the embedding space of Transformer-based text encoders and show that clearing out harmful linear subspaces helps to train a robust classifier, ignoring domain-specific spurious features. We investigate several subspace decomposition and feature selection strategies and achieve significant improvements over state of the art methods in cross-domain and cross-generator transfer. Our best approaches for head-wise and coordinate-based subspace removal increase the mean out-of-distribution (OOD) classification score by up to 9% in particular setups for RoBERTa and BERT embeddings._
+
+![intuition](https://github.com/SilverSolver/RobustATD/blob/main/emnlp_intuition.png?raw=true)
+
 **Python files**:
 - `utils.py` : some useful functions
 - `evaluation.py` : contains an evaluator class for SemEval
@@ -28,6 +32,10 @@ Welcome to the official repository for the paper [**Robust AI-Generated Text Det
 # Erratum
 
 After the acceptance of our paper to **Findings of EMNLP 2024**, we found a mistake in our code for **Selected coordinates** method. Namely, in the experiments with this particular method validation subsets of "Wikipedia" and "Reddit" subdomains of GPT-3D were intersecting with test subsets on the same subdomains, which is obviously incorrect; fortunately, no such problem for other methods was found. We fixed this mistake and received new results for Selected coordinates method. We put updated results into our poster and presentation. We will also list them here: 
+
+Updated results for Figure 3 e:
+
+![figure_3_e](https://github.com/SilverSolver/RobustATD/blob/main/best_set_of_coords.png?raw=true)
 
 Updated results for Table 3 (accuracy):
 
