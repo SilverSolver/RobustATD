@@ -31,7 +31,7 @@ _Growing amount and quality of AI-generated texts makes detecting such content m
 
 # Erratum
 
-After the acceptance of the camera-ready version of our paper to **Findings of EMNLP 2024**, we found a mistake in our code for **Selected coordinates** method. Namely, in the experiments with this particular method validation subsets of "Wikipedia" and "Reddit" subdomains of GPT-3D were intersecting with test subsets on the same subdomains, which is obviously incorrect; fortunately, no such problem for other methods was found. We fixed this mistake and received new results for Selected coordinates method. This is the list of all updated results:
+After the acceptance of our paper to **Findings of EMNLP 2024**, we found a mistake in our code for **Selected coordinates** method. Namely, in the experiments with this particular method validation subsets of "Wikipedia" and "Reddit" subdomains of GPT-3D were intersecting with test subsets on the same subdomains, which is obviously incorrect; fortunately, no such problem for other methods was found. We fixed this mistake and received new results for Selected coordinates method. This is the list of all updated results:
 
 Updated results for Figure 3 e in paper (accuracy):
 
